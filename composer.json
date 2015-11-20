@@ -1,0 +1,34 @@
+{
+	"name": "adrianmejias/ga-events",
+	"description": "Add Google Analytics link tracking automatically",
+	"version": "0.0.1",
+	"keywords": [
+		"analytics",
+		"js",
+		"google",
+		"events",
+		"jquery"
+	],
+	"homepage": "https://adrianmejias.com/ga-events",
+	"authors": [
+		{
+			"name": "Adrian Mejias",
+			"email": "adrianmejias@gmail.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/adrianmejias/ga-events/issues"
+	},
+	"license": "Public Domain",
+	"extra": {
+		"branch-alias": {
+			"dev-master": "0.0.x-dev"
+		}
+	},
+	"replace": {
+		"adrianmejias/ga-events": "self.version"
+	},
+	"require": {
+		"jquery/jquery": "1.11.*"
+	}
+}
