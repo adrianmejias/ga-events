@@ -60,6 +60,7 @@ $(document).gaEvents();
 * ``printTrackAfter``: **boolean** Enable after print data sending.
 * ``enableIdlePageTrack``: **boolean** Enable idle data sending.
 * ``idlePageInterval``: **integer** Average time that will send idle data.
+* ``enableErrorTrack``: **boolean** Enable javascript error
 
 ```javascript
 $(document).gaEvents({
@@ -78,6 +79,7 @@ $(document).gaEvents({
   printTrackBefore: false,
   printTrackAfter: true,
   enableIdlePageTrack: false,
-  idlePageInterval: 60 * 1000
+  idlePageInterval: 60 * 1000,
+  enableErrorTrack: true
 });
 ```
