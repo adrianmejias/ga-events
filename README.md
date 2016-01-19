@@ -17,6 +17,7 @@ Several quick start options are available:
 - [Download the latest release](https://github.com/adrianmejias/ga-events/archive/0.0.1.zip).
 - Clone the repo: `git clone https://github.com/adrianmejias/ga-events.git`.
 - Install with [Bower](http://bower.io): `bower install ga-events`.
+- Analytics dashboard for javascript errors: https://www.google.com/analytics/web/template?uid=dPxbEfBpSOWlNBQvG_l85g
 
 ### What's included
 

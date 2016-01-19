@@ -217,6 +217,7 @@
         }
 
         // Error Tracking
+        // https://www.google.com/analytics/web/template?uid=dPxbEfBpSOWlNBQvG_l85g
         if (settings.enableErrorTrack) {
             window.addEventListener('error', function (e) {
                 ga('send', 'exception', {
