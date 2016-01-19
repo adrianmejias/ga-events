@@ -68,7 +68,8 @@
                 printTrackBefore: false,
                 printTrackAfter: true,
                 enableIdlePageTrack: false,
-                idlePageInterval: 60 * 1000
+                idlePageInterval: 60 * 1000,
+                enableErrorTrack: true
             }, options);
 
         // Load Google Analytics
@@ -213,6 +214,20 @@
                     label = typeof parts[2] == 'undefined' || !parts[2].length ? href : parts[2] + ' (' + href + ')';
                 trackEvent(category, action, label);
             }
+        }
+
+        // Error Tracking
+        if (settings.enableErrorTrack) {
+            window.addEventListener('error', function (e) {
+                ga('send', 'exception', {
+                    exDescription: 'JavaScript Error ' + e.message + ' ' + e.filename + ': ' + e.lineno
+                });
+            });
+            $(document).ajaxError(function (e, request, settings) {
+                ga('send', 'exception', {
+                    exDescription: 'Ajax Error ' + settings.url + ' ' + e.result
+                });
+            });
         }
 
         return this;
